@@ -6,13 +6,16 @@ export default async function AllFilesPage(){
 	console.log({ blobs })
 
 	return(
-		<div>
-			{blobs.map((blob) => (
-				<div key={blob.url}>
-					{blob.pathname} - <DeleteFunction url={blob.url} />
-					<img src={blob.url} alt="" />
-				</div>
-			))}
-		</div>
+		<main>
+			<div>
+				{blobs.map((blob) => (
+					<div key={blob.url}>
+						{blob.pathname} - <DeleteFunction url={blob.url} />
+						<img src={blob.url} alt="" />
+					</div>
+				))}
+			</div>
+			<h1>banana</h1>
+		</main>
 	)
 }
