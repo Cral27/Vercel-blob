@@ -61,7 +61,7 @@ export default function AvatarUploadPage() {
 			</form>
 			{previewUrl && (
 				<div>
-					{/* <img src={previewUrl} alt="Image Preview" className='w-40 h-40'/> */}
+					<img src={previewUrl} alt="Image Preview" className='w-40 h-40'/>
 					
 				</div>
 			)}
